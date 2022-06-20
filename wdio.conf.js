@@ -37,7 +37,7 @@ exports.config = {
         // './test/specs/vtiger/ProductModule/createProduct.js'
         // './test/specs/vtiger/CampaignModule/createCampaign.js'
         // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js'
-        // './test/specs/vtiger/contactModule/createContactWithoutLastName.js'
+        './test/specs/vtiger/contactModule/createContactWithoutLastName.js'
         // './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
     ],
     suites:{
@@ -98,11 +98,11 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true
     },
-    // {
-    //     maxInstances: 3,
-    //     browserName: 'firefox',
-    //     acceptInsecureCerts: true
-    // }
+    {
+        maxInstances: 3,
+        browserName: 'firefox',
+        acceptInsecureCerts: true
+    }
     ],
     //
     // ===================
