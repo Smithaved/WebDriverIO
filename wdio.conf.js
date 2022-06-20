@@ -37,9 +37,22 @@ exports.config = {
         // './test/specs/vtiger/ProductModule/createProduct.js'
         // './test/specs/vtiger/CampaignModule/createCampaign.js'
         // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js'
-        './test/specs/vtiger/contactModule/createContactWithoutLastName.js'
+        // './test/specs/vtiger/contactModule/createContactWithoutLastName.js'
         // './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
     ],
+    suites:{
+        smokeSuite:[
+        './test/specs/vtiger/contactModule/createContact.js',
+        './test/specs/vtiger/OrganizationModule/createOrganization.js', 
+        './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
+        ],
+        regrationSuite:[   
+        './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
+        './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+        './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
+        './test/specs/vtiger/contactModule/createContactWithContactImage.js',
+        './test/specs/vtiger/contactModule/createContactWithBirthDate.js',]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -66,20 +79,31 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
+    capabilities: [//{
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        // maxInstances: 3,
         //
-        browserName: 'firefox',
-        acceptInsecureCerts: true
+        // browserName: 'chrome',
+        // acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+   // },
+    {
+        maxInstances: 3,
+        browserName: 'chrome',
+        acceptInsecureCerts: true
+    },
+    // {
+    //     maxInstances: 3,
+    //     browserName: 'firefox',
+    //     acceptInsecureCerts: true
+    // }
+    ],
     //
     // ===================
     // Test Configurations
