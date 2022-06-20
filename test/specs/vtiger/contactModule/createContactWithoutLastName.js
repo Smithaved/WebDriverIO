@@ -32,7 +32,8 @@ describe("CreateContact",async()=>{
         //Dont Fill mandatory fields and click on save and check contact information page is displayed with the newly added lastname
         var save=await browser.$('//input[@class="crmButton small save"]')
         await save.click()
-        await browser.getAlertText()
+        var alertMessage=await browser.getAlertText()
+        await expect(alertMessage).toContain("Last Name")
         await browser.acceptAlert()
         //logout
         var element=browser.$('//img[@src="themes/softed/images/user.PNG"]')
