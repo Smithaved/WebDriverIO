@@ -19,13 +19,14 @@ describe("Frames",async()=>{
         // await expect(presentText1).toContainEqual(originalText1)
         await browser.switchToParentFrame()
         //frame 4
-        // await browser.switchToFrame(3)
-        // const frame4Text=await browser.$('//input[@name="mytext4"]')
-        // var originalText1="SmithaVed"
-        // await frame4Text.setValue(originalText1)
-        //  var presentText1=await frame4Text.getValue()
+        await browser.switchToFrame(3)
+        const frame4Text=await browser.$('//input[@name="mytext4"]')
+        var originalText1="SmithaVed"
+        await frame4Text.setValue(originalText1)
+         var presentText1=await frame4Text.getValue()
+         console.log(presentText1);
         // await expect(presentText1).toContainEqual(originalText1)
-        // await browser.switchToParentFrame()
+        await browser.switchToParentFrame()
         //frame 3
         await browser.switchToFrame(2)
         const frame3Text=await browser.$('//input[@name="mytext3"]')
@@ -38,6 +39,9 @@ describe("Frames",async()=>{
         const radioButton=await browser.$('//span[.="I am a human"]')
         await radioButton.click()
         console.log( await radioButton.getText());
+        const checkBox1=await browser.$('//span[.="Form Autofilling"]')
+        await checkBox1.click()
+        console.log( await checkBox1.getText());
         await browser.switchToParentFrame()
     })
 })

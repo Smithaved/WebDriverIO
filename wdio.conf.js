@@ -42,7 +42,11 @@ exports.config = {
         // './test/specs/Assignments/radioButton.js',
         // './test/specs/Assignments/checkBox.js',
         // './test/specs/Assignments/scrollToHelp.js'
-        './test/specs/Assignments/frames.js'
+        // './test/specs/Assignments/frames.js'
+        // './test/specs/Assignments/frames2.js'
+        // './test/specs/Alert/alert.js'
+        // './test/specs/SpiceJet/bookAFlight.js'
+        './test/specs/Disabled/disable.js'
     ],
     suites:{
         smokeSuite:[
