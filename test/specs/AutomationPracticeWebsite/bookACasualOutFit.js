@@ -6,5 +6,8 @@ describe("AutomationPratice",async ()=>{
         await browser.maximizeWindow()
         const majorTab= await browser.$("//a[.='Dresses']")
         await majorTab.moveTo()
+        const causalDress=await browser.$("//a[@title='Casual Dresses']")
+        await causalDress.waitForDisplayed()
+        await causalDress.click()
     })
 })

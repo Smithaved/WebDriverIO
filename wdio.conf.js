@@ -26,19 +26,22 @@ exports.config = {
         // './test/specs/QBank/firstScript.js'
         // './test/specs/vtiger/practice/vtiger.js'
         // './test/specs/Facebook/loginError.js'
-        './test/specs/vtiger/OrganizationModule/createOrganization.js',    
-        './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
-        './test/specs/vtiger/contactModule/createContact.js',
-        './test/specs/vtiger/contactModule/createContactWithOrganization.js',
-        './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
-        './test/specs/vtiger/contactModule/createContactWithContactImage.js',
-        './test/specs/vtiger/contactModule/createContactWithBirthDate.js',  
-        './test/specs/vtiger/DocumentModule/createDocument.js',
-        './test/specs/vtiger/ProductModule/createProduct.js',
-        './test/specs/vtiger/CampaignModule/createCampaign.js',
-        './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
-        './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
-        './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
+        // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
+        // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
+        // './test/specs/vtiger/contactModule/createContact.js',
+        // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+        // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
+        // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
+        // './test/specs/vtiger/contactModule/createContactWithBirthDate.js',  
+        // './test/specs/vtiger/DocumentModule/createDocument.js',
+        // './test/specs/vtiger/ProductModule/createProduct.js',
+        // './test/specs/vtiger/CampaignModule/createCampaign.js',
+        // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
+        // './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
+        // './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
+        './test/specs/Assignments/radioButton.js',
+        './test/specs/Assignments/checkBox.js',
+        './test/specs/Assignments/scrollToHelp.js'
     ],
     suites:{
         smokeSuite:[
@@ -98,11 +101,11 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true
     },
-    {
-        maxInstances: 3,
-        browserName: 'firefox',
-        acceptInsecureCerts: true
-    }
+    // {
+    //     maxInstances: 3,
+    //     browserName: 'firefox',
+    //     acceptInsecureCerts: true
+    // }
     ],
     //
     // ===================
