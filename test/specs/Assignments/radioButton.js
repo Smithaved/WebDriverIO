@@ -6,7 +6,7 @@ describe("Assignment1",async ()=>{
         await browser.maximizeWindow()
         const radioButton=await browser.$$('//label[.="Two"]')
         await radioButton[2].click()
-        const result=await browser.isElementSelected("radio-choice-0b")
+        const result=await radioButton[2].isSelected()
         console.log(result);
     })
 })

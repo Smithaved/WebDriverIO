@@ -39,9 +39,10 @@ exports.config = {
         // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
         // './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
         // './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
-        './test/specs/Assignments/radioButton.js',
-        './test/specs/Assignments/checkBox.js',
-        './test/specs/Assignments/scrollToHelp.js'
+        // './test/specs/Assignments/radioButton.js',
+        // './test/specs/Assignments/checkBox.js',
+        // './test/specs/Assignments/scrollToHelp.js'
+        './test/specs/Assignments/frames.js'
     ],
     suites:{
         smokeSuite:[
