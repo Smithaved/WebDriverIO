@@ -1,3 +1,5 @@
+const video = require('wdio-video-reporter');
+
 exports.config = {
     //
     // ====================
@@ -43,10 +45,10 @@ exports.config = {
         // './test/specs/Assignments/checkBox.js',
         // './test/specs/Assignments/scrollToHelp.js'
         // './test/specs/Assignments/frames.js'
-        // './test/specs/Assignments/frames2.js'
+        './test/specs/Assignments/frames2.js'
         // './test/specs/Alert/alert.js'
-        // './test/specs/SpiceJet/bookAFlight.js'
-        './test/specs/Disabled/disable.js'
+        // './test/specs/Ajio/bookAMenOutfit.js'
+        // './test/specs/Disabled/disable.js'
     ],
     // suites:{
     //     smokeSuite:[
@@ -150,7 +152,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 10000,
+    connectionRetryTimeout: 120000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -182,11 +184,17 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     // reporters: ['spec'],
-    reporters: [['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-    }]],
+    reporters: [
+    //     ['allure', {
+    //     outputDir: 'allure-results',
+    //     disableWebdriverStepsReporting: true,
+    //     disableWebdriverScreenshotsReporting: false,
+    // }],
+    [video, {
+        saveAllVideos: false,       // If true, also saves videos for successful test cases
+        videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
+      }],    
+],
 
 
     
@@ -291,8 +299,11 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    // },
+    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            await browser.takeScreenshot();
+          }
+    },
 
 
     /**

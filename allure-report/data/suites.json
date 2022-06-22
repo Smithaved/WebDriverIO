@@ -5,21 +5,21 @@
     "name" : "Disable",
     "children" : [ {
       "name" : "disable",
-      "uid" : "1608e3af20b7fb63",
+      "uid" : "bc0aa5a930dbae85",
       "parentUid" : "319f6e478436bcd17ca1e3b488f5a231",
       "status" : "failed",
       "time" : {
-        "start" : 1655880536686,
-        "stop" : 1655880548061,
-        "duration" : 11375
+        "start" : 1655896070992,
+        "stop" : 1655896081954,
+        "duration" : 10962
       },
       "flaky" : false,
       "newFailed" : false,
       "newPassed" : false,
       "newBroken" : false,
-      "retriesCount" : 8,
-      "retriesStatusChange" : true,
-      "parameters" : [ "chrome-102.0.5005.115" ]
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-103.0.5060.53" ]
     } ],
     "uid" : "319f6e478436bcd17ca1e3b488f5a231"
   } ]

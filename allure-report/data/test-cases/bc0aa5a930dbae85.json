@@ -1,0 +1,86 @@
+{
+  "uid" : "bc0aa5a930dbae85",
+  "name" : "disable",
+  "fullName" : "Disable.disable",
+  "historyId" : "874d2cda21d02995dd4776eaace9c1d2",
+  "time" : {
+    "start" : 1655896070992,
+    "stop" : 1655896081954,
+    "duration" : 10962
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+  "statusTrace" : "Error: Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"\n                    at Context.<anonymous> (C:\\Users\\USER\\Desktop\\WebDriverIo\\test\\specs\\Disabled\\disable.js:10:32)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+    "statusTrace" : "Error: Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"\n                    at Context.<anonymous> (C:\\Users\\USER\\Desktop\\WebDriverIo\\test\\specs\\Disabled\\disable.js:10:32)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "10b6afb6eec648ca",
+      "name" : "Screenshot",
+      "source" : "10b6afb6eec648ca.png",
+      "type" : "image/png",
+      "size" : 6319
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Disable"
+  }, {
+    "name" : "testClass",
+    "value" : "Disable"
+  }, {
+    "name" : "testMethod",
+    "value" : "disable"
+  }, {
+    "name" : "package",
+    "value" : "Disable"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "bc0aa5a930dbae85.json",
+  "parameterValues" : [ "chrome-103.0.5060.53" ]
+}

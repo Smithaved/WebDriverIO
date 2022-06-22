@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655896070991' stop='1655896081955'>
+    <name>Disable</name>
+    <title>Disable</title>
+    <test-cases>
+        <test-case start='1655896070992' status='failed' stop='1655896081954'>
+            <name>disable</name>
+            <title>disable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.53'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f7711951-5772-4545-be35-6ee1e855bab5-attachment.png' type='image/png' size='6319'/>
+            </attachments>
+            <failure>
+                <message>Expect $(`#lname`) to be enabled
+                
+                Expected: "enabled"
+                Received: "not enabled"</message>
+                <stack-trace>Error: Expect $(`#lname`) to be enabled
+                
+                Expected: "enabled"
+                Received: "not enabled"
+                    at Context.&lt;anonymous> (C:\Users\USER\Desktop\WebDriverIo\test\specs\Disabled\disable.js:10:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
