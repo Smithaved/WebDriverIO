@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655877106741' stop='1655877107787'>
+    <name>Disable</name>
+    <title>Disable</title>
+    <test-cases>
+        <test-case start='1655877106743' status='broken' stop='1655877107785'>
+            <name>disable</name>
+            <title>disable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received an instance of Object</message>
+                <stack-trace>TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received an instance of Object
+                    at new NodeError (node:internal/errors:372:5)
+                    at Function.from (node:buffer:323:9)
+                    at AllureReporter.attachScreenshot (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\allure-reporter\build\index.js:455:61)
+                    at AllureReporter.onAfterCommand (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\allure-reporter\build\index.js:260:14)
+                    at AllureReporter.emit (node:events:539:35)
+                    at AllureReporter.emit (node:domain:475:12)
+                    at C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\runner\build\reporter.js:36:56
+                    at Array.forEach (&lt;anonymous>)
+                    at BaseReporter.emit (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\runner\build\reporter.js:36:25)
+                    at EventEmitter.&lt;anonymous> (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\runner\build\index.js:209:82)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

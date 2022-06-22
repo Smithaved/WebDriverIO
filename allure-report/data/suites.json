@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Disable",
+    "children" : [ {
+      "name" : "disable",
+      "uid" : "1608e3af20b7fb63",
+      "parentUid" : "319f6e478436bcd17ca1e3b488f5a231",
+      "status" : "failed",
+      "time" : {
+        "start" : 1655880536686,
+        "stop" : 1655880548061,
+        "duration" : 11375
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : true,
+      "parameters" : [ "chrome-102.0.5005.115" ]
+    } ],
+    "uid" : "319f6e478436bcd17ca1e3b488f5a231"
+  } ]
+}

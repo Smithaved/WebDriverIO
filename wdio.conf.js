@@ -48,19 +48,19 @@ exports.config = {
         // './test/specs/SpiceJet/bookAFlight.js'
         './test/specs/Disabled/disable.js'
     ],
-    suites:{
-        smokeSuite:[
-        './test/specs/vtiger/contactModule/createContact.js',
-        './test/specs/vtiger/OrganizationModule/createOrganization.js', 
-        './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
-        ],
-        regrationSuite:[   
-        './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
-        './test/specs/vtiger/contactModule/createContactWithOrganization.js',
-        './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
-        './test/specs/vtiger/contactModule/createContactWithContactImage.js',
-        './test/specs/vtiger/contactModule/createContactWithBirthDate.js',]
-    },
+    // suites:{
+    //     smokeSuite:[
+    //     './test/specs/vtiger/contactModule/createContact.js',
+    //     './test/specs/vtiger/OrganizationModule/createOrganization.js', 
+    //     './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
+    //     ],
+    //     regrationSuite:[   
+    //     './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
+    //     './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+    //     './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
+    //     './test/specs/vtiger/contactModule/createContactWithContactImage.js',
+    //     './test/specs/vtiger/contactModule/createContactWithBirthDate.js',]
+    // },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -150,7 +150,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 10000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -181,7 +181,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    // reporters: ['spec'],
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
 
 
     

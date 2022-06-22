@@ -1,0 +1,22 @@
+{
+  "7fc6a2601e8ad2d109b0c08276472f3e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1608e3af20b7fb63",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+      "time" : {
+        "start" : 1655880536686,
+        "stop" : 1655880548061,
+        "duration" : 11375
+      }
+    } ]
+  }
+}

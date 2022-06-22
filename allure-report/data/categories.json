@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+      "children" : [ {
+        "name" : "disable",
+        "uid" : "1608e3af20b7fb63",
+        "parentUid" : "4218537a7c63625082688ee68ee52471",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655880536686,
+          "stop" : 1655880548061,
+          "duration" : 11375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 8,
+        "retriesStatusChange" : true,
+        "parameters" : [ "chrome-102.0.5005.115" ]
+      } ],
+      "uid" : "4218537a7c63625082688ee68ee52471"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

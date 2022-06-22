@@ -1,0 +1,137 @@
+{
+  "uid" : "1608e3af20b7fb63",
+  "name" : "disable",
+  "fullName" : "Disable.disable",
+  "historyId" : "7fc6a2601e8ad2d109b0c08276472f3e",
+  "time" : {
+    "start" : 1655880536686,
+    "stop" : 1655880548061,
+    "duration" : 11375
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+  "statusTrace" : "Error: Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"\n                    at Context.<anonymous> (C:\\Users\\USER\\Desktop\\WebDriverIo\\test\\specs\\Disabled\\disable.js:10:32)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 8,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Disable"
+  }, {
+    "name" : "testClass",
+    "value" : "Disable"
+  }, {
+    "name" : "testMethod",
+    "value" : "disable"
+  }, {
+    "name" : "package",
+    "value" : "Disable"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-102.0.5005.115"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c837baffdbc693bb",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+      "time" : {
+        "start" : 1655880431038,
+        "stop" : 1655880441978,
+        "duration" : 10940
+      }
+    }, {
+      "uid" : "312f68e8092f9ac9",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+      "time" : {
+        "start" : 1655879631904,
+        "stop" : 1655879642678,
+        "duration" : 10774
+      }
+    }, {
+      "uid" : "fd932fd143e8e303",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655879521461,
+        "stop" : 1655879522507,
+        "duration" : 1046
+      }
+    }, {
+      "uid" : "6da5df09f4167566",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"c\"\n                Received: \"file:///C:/Users/USER/Desktop/WebDriverIo/test/specs/Disabled/disable.html\"",
+      "time" : {
+        "start" : 1655879121584,
+        "stop" : 1655879131882,
+        "duration" : 10298
+      }
+    }, {
+      "uid" : "ca00efd31a747317",
+      "status" : "broken",
+      "statusDetails" : "Can't call setValue on element with selector \"fname\" because element wasn't found",
+      "time" : {
+        "start" : 1655878798660,
+        "stop" : 1655878809143,
+        "duration" : 10483
+      }
+    }, {
+      "uid" : "b2babd7f46e15109",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655878534842,
+        "stop" : 1655878535890,
+        "duration" : 1048
+      }
+    }, {
+      "uid" : "afb36d9c87bc79fd",
+      "status" : "broken",
+      "statusDetails" : "The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received an instance of Object",
+      "time" : {
+        "start" : 1655877106743,
+        "stop" : 1655877107785,
+        "duration" : 1042
+      }
+    }, {
+      "uid" : "9f828f538f92fca2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655875714067,
+        "stop" : 1655875714996,
+        "duration" : 929
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1608e3af20b7fb63.json",
+  "parameterValues" : [ "chrome-102.0.5005.115" ]
+}
