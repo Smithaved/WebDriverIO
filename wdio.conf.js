@@ -45,10 +45,10 @@ exports.config = {
         // './test/specs/Assignments/checkBox.js',
         // './test/specs/Assignments/scrollToHelp.js'
         // './test/specs/Assignments/frames.js'
-        './test/specs/Assignments/frames2.js'
+        // './test/specs/Assignments/frames2.js'
         // './test/specs/Alert/alert.js'
         // './test/specs/Ajio/bookAMenOutfit.js'
-        // './test/specs/Disabled/disable.js'
+        './test/specs/Disabled/disable.js'
     ],
     // suites:{
     //     smokeSuite:[
@@ -152,7 +152,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 10000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -299,11 +299,11 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
-        if (error) {
-            await browser.takeScreenshot();
-          }
-    },
+    // afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+    //     if (error) {
+    //         await browser.takeScreenshot();
+    //       }
+    // },
 
 
     /**
