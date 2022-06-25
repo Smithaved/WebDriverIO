@@ -30,7 +30,7 @@ exports.config = {
         // './test/specs/Facebook/loginError.js'
         // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
-        // './test/specs/vtiger/contactModule/createContact.js',
+        './test/specs/vtiger/contactModule/createContact.js',
         // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
         // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
@@ -48,7 +48,9 @@ exports.config = {
         // './test/specs/Assignments/frames2.js'
         // './test/specs/Alert/alert.js'
         // './test/specs/Ajio/bookAMenOutfit.js'
-        './test/specs/Disabled/disable.js'
+        // './test/specs/Disabled/disable.js'
+        // './test/specs/example.e2e.js'
+        // './test/specs/createContact.js'
     ],
     // suites:{
     //     smokeSuite:[

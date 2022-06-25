@@ -9,16 +9,16 @@ class LoginPage extends Page {
     /**
      * define selectors using getter methods
      */
-    get inputUsername () {
-        return $('#username');
+    get username () {
+        return $('//input[@name="user_name"]');
     }
 
-    get inputPassword () {
-        return $('#password');
+    get password () {
+        return $('//input[@name="user_password"]');
     }
 
-    get btnSubmit () {
-        return $('button[type="submit"]');
+    get submit () {
+        return $('//input[@id="submitButton"]');
     }
 
     /**
@@ -26,16 +26,16 @@ class LoginPage extends Page {
      * e.g. to login using username and password
      */
     async login (username, password) {
-        await this.inputUsername.setValue(username);
-        await this.inputPassword.setValue(password);
-        await this.btnSubmit.click();
+        await this.username.setValue(username);
+        await this.password.setValue(password);
+        await this.submit.click();
     }
 
     /**
      * overwrite specific options to adapt it to page object
      */
     open () {
-        return super.open('login');
+        return super.open();
     }
 }
 
