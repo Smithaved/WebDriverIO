@@ -16,11 +16,11 @@ class Search extends Page
         searchedText.click();
     }
 
-    async search(organizationName)
+    async search(searchtext)
     {
-        await this.searchText.setValue(organizationName)
+        await this.searchText.setValue(searchtext)
         await this.searchButton.click()
-        await this.searchedText(organizationName)
+        await this.searchedText(searchtext)
     }
 }
 module.exports=new Search()
