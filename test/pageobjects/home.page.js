@@ -15,13 +15,22 @@ class Home extends Page {
     {
         return $('//a[.="Sign Out"]')
     }
+
+    get organization()
+    {
+        return $('//a[.="Organizations"]')
+    }
     async clickOnContact()
     {
         await this.contact.click()
     }
+    async clickOnOrganization()
+    {
+        await this.organization.click()
+    }
     async logout()
     {
-        await this.adminstrator.moveTo()
+        await this.adminstrator.click()
         await this.signOut.click()
     }
 }

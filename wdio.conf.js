@@ -28,10 +28,10 @@ exports.config = {
         // './test/specs/QBank/firstScript.js'
         // './test/specs/vtiger/practice/vtiger.js'
         // './test/specs/Facebook/loginError.js'
-        // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
+        './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
         // './test/specs/vtiger/contactModule/createContact.js',
-        './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+        // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
         // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
         // './test/specs/vtiger/contactModule/createContactWithBirthDate.js',  
