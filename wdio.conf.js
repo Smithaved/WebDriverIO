@@ -29,7 +29,7 @@ exports.config = {
         // './test/specs/vtiger/practice/vtiger.js'
         // './test/specs/Facebook/loginError.js'
         // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
-        './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
+        // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
         // './test/specs/vtiger/contactModule/createContact.js',
         // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
@@ -38,7 +38,7 @@ exports.config = {
         // './test/specs/vtiger/DocumentModule/createDocument.js',
         // './test/specs/vtiger/ProductModule/createProduct.js',
         // './test/specs/vtiger/CampaignModule/createCampaign.js',
-        // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
+        './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
         // './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
         // './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
         // './test/specs/Assignments/radioButton.js',

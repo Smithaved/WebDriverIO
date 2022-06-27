@@ -20,6 +20,22 @@ class Home extends Page {
     {
         return $('//a[.="Organizations"]')
     }
+
+    get more()
+    {
+        return $('//a[.="More"]')
+    }
+    get campaign()
+    {
+        return $('//a[.="Campaigns"]')
+    }
+
+    async clickOnCampaign()
+    {
+        await this.more.moveTo()
+        await this.campaign.click()
+
+    }
     async clickOnContact()
     {
         await this.contact.click()
