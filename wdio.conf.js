@@ -28,7 +28,7 @@ exports.config = {
         // './test/specs/QBank/firstScript.js'
         // './test/specs/vtiger/practice/vtiger.js'
         // './test/specs/Facebook/loginError.js'
-        // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
+        './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
         // './test/specs/vtiger/contactModule/createContact.js',
         // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
@@ -38,7 +38,7 @@ exports.config = {
         // './test/specs/vtiger/DocumentModule/createDocument.js',
         // './test/specs/vtiger/ProductModule/createProduct.js',
         // './test/specs/vtiger/CampaignModule/createCampaign.js',
-        './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
+        // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
         // './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
         // './test/specs/AutomationPracticeWebsite/bookACasualOutFit.js'
         // './test/specs/Assignments/radioButton.js',
@@ -85,7 +85,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 5,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -187,11 +187,11 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     // reporters: ['spec'],
     reporters: [
-    //     ['allure', {
-    //     outputDir: 'allure-results',
-    //     disableWebdriverStepsReporting: true,
-    //     disableWebdriverScreenshotsReporting: false,
-    // }],
+        ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }],
     [video, {
         saveAllVideos: false,       // If true, also saves videos for successful test cases
         videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]

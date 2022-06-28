@@ -1,11 +1,11 @@
 [ {
-  "uid" : "dba86bf9dc2d8678",
-  "name" : "disable",
+  "uid" : "766cdc42cd17856d",
+  "name" : "CreateOrganization",
   "time" : {
-    "start" : 1655896070992,
-    "stop" : 1655896081954,
-    "duration" : 10962
+    "start" : 1656412185484,
+    "stop" : 1656412209923,
+    "duration" : 24439
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 } ]

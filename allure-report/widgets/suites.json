@@ -1,13 +1,13 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "319f6e478436bcd17ca1e3b488f5a231",
-    "name" : "Disable",
+    "uid" : "917d5420ce5402ebd91e0926cd132ac3",
+    "name" : "Organization",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }

@@ -1,0 +1,6 @@
+class page{
+    async open()
+    {
+        
+    }
+}

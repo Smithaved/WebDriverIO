@@ -2,14 +2,14 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "disable",
-    "uid" : "dba86bf9dc2d8678",
+    "name" : "CreateOrganization",
+    "uid" : "766cdc42cd17856d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1655896070992,
-      "stop" : 1655896081954,
-      "duration" : 10962
+      "start" : 1656412185484,
+      "stop" : 1656412209923,
+      "duration" : 24439
     },
     "flaky" : false,
     "newFailed" : false,
@@ -17,6 +17,6 @@
     "newBroken" : false,
     "retriesCount" : 0,
     "retriesStatusChange" : false,
-    "parameters" : [ "chrome-103.0.5060.53" ]
+    "parameters" : [ "chrome-103.0.5060.53", "103.0.5060.53" ]
   } ]
 }

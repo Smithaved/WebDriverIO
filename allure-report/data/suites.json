@@ -2,16 +2,16 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "Disable",
+    "name" : "Organization",
     "children" : [ {
-      "name" : "disable",
-      "uid" : "dba86bf9dc2d8678",
-      "parentUid" : "319f6e478436bcd17ca1e3b488f5a231",
-      "status" : "failed",
+      "name" : "CreateOrganization",
+      "uid" : "766cdc42cd17856d",
+      "parentUid" : "917d5420ce5402ebd91e0926cd132ac3",
+      "status" : "passed",
       "time" : {
-        "start" : 1655896070992,
-        "stop" : 1655896081954,
-        "duration" : 10962
+        "start" : 1656412185484,
+        "stop" : 1656412209923,
+        "duration" : 24439
       },
       "flaky" : false,
       "newFailed" : false,
@@ -19,8 +19,8 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-103.0.5060.53" ]
+      "parameters" : [ "chrome-103.0.5060.53", "103.0.5060.53" ]
     } ],
-    "uid" : "319f6e478436bcd17ca1e3b488f5a231"
+    "uid" : "917d5420ce5402ebd91e0926cd132ac3"
   } ]
 }

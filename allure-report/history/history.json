@@ -1,21 +1,20 @@
 {
-  "874d2cda21d02995dd4776eaace9c1d2" : {
+  "be44a9a50ff8a88e3f5caa80c3445260" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dba86bf9dc2d8678",
-      "status" : "failed",
-      "statusDetails" : "Expect $(`#lname`) to be enabled\n                \n                Expected: \"enabled\"\n                Received: \"not enabled\"",
+      "uid" : "766cdc42cd17856d",
+      "status" : "passed",
       "time" : {
-        "start" : 1655896070992,
-        "stop" : 1655896081954,
-        "duration" : 10962
+        "start" : 1656412185484,
+        "stop" : 1656412209923,
+        "duration" : 24439
       }
     } ]
   }

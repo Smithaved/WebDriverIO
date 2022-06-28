@@ -1,0 +1,153 @@
+{
+  "uid" : "766cdc42cd17856d",
+  "name" : "CreateOrganization",
+  "fullName" : "Organization.CreateOrganization",
+  "historyId" : "be44a9a50ff8a88e3f5caa80c3445260",
+  "time" : {
+    "start" : 1656412185484,
+    "stop" : 1656412209923,
+    "duration" : 24439
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a24ba6f3769045cb",
+      "name" : "Screenshot",
+      "source" : "a24ba6f3769045cb.png",
+      "type" : "image/png",
+      "size" : 92831
+    }, {
+      "uid" : "b0058fa9a4d41c0d",
+      "name" : "Screenshot",
+      "source" : "b0058fa9a4d41c0d.png",
+      "type" : "image/png",
+      "size" : 95505
+    }, {
+      "uid" : "327a2066b2a8dc21",
+      "name" : "Screenshot",
+      "source" : "327a2066b2a8dc21.png",
+      "type" : "image/png",
+      "size" : 96189
+    }, {
+      "uid" : "b69731f3980f753b",
+      "name" : "Screenshot",
+      "source" : "b69731f3980f753b.png",
+      "type" : "image/png",
+      "size" : 96189
+    }, {
+      "uid" : "454963a87e3d4ccc",
+      "name" : "Screenshot",
+      "source" : "454963a87e3d4ccc.png",
+      "type" : "image/png",
+      "size" : 96061
+    }, {
+      "uid" : "d747b50a499e18c5",
+      "name" : "Screenshot",
+      "source" : "d747b50a499e18c5.png",
+      "type" : "image/png",
+      "size" : 96061
+    }, {
+      "uid" : "7771c2c02d1053a3",
+      "name" : "Screenshot",
+      "source" : "7771c2c02d1053a3.png",
+      "type" : "image/png",
+      "size" : 61766
+    }, {
+      "uid" : "b65a515035254e90",
+      "name" : "Screenshot",
+      "source" : "b65a515035254e90.png",
+      "type" : "image/png",
+      "size" : 89835
+    }, {
+      "uid" : "cba6001d10955f0",
+      "name" : "Screenshot",
+      "source" : "cba6001d10955f0.png",
+      "type" : "image/png",
+      "size" : 72897
+    }, {
+      "uid" : "684e38d87f023837",
+      "name" : "Screenshot",
+      "source" : "684e38d87f023837.png",
+      "type" : "image/png",
+      "size" : 72897
+    }, {
+      "uid" : "2b836bf80a06019b",
+      "name" : "Screenshot",
+      "source" : "2b836bf80a06019b.png",
+      "type" : "image/png",
+      "size" : 73414
+    }, {
+      "uid" : "62b7082a955cd9d6",
+      "name" : "Screenshot",
+      "source" : "62b7082a955cd9d6.png",
+      "type" : "image/png",
+      "size" : 94460
+    }, {
+      "uid" : "85efab3aba94d8e",
+      "name" : "Screenshot",
+      "source" : "85efab3aba94d8e.png",
+      "type" : "image/png",
+      "size" : 95125
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 13,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Organization"
+  }, {
+    "name" : "testClass",
+    "value" : "Organization"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreateOrganization"
+  }, {
+    "name" : "package",
+    "value" : "Organization"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-103.0.5060.53"
+  }, {
+    "name" : "browserVersion",
+    "value" : "103.0.5060.53"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "766cdc42cd17856d.json",
+  "parameterValues" : [ "chrome-103.0.5060.53", "103.0.5060.53" ]
+}
