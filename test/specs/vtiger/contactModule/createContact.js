@@ -6,8 +6,8 @@ const ContactInformationPage = require("../../../pageobjects/VtigerPOM/contactIn
 const fs=require("fs")
 const detail=JSON.parse(fs.readFileSync("test/GenericUtilities/commonData.json"))
 describe("CreateContact",async()=>{
-    detail.forEach(({username,password}) => {
-      it("CreateContact",async()=>{
+    detail.forEach(({username,password,contact}) => {
+      it("CreateContact--ContactModule",async()=>{
         // launching the application
         await LoginPage.open()
         //maximizing the browser

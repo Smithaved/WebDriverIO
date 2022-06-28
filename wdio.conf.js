@@ -31,7 +31,7 @@ exports.config = {
         // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
         './test/specs/vtiger/contactModule/createContact.js',
-        // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+        './test/specs/vtiger/contactModule/createContactWithOrganization.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
         // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
         // './test/specs/vtiger/contactModule/createContactWithBirthDate.js',  
@@ -108,11 +108,11 @@ exports.config = {
     {
         maxInstances: 3,
         browserName: 'chrome',
-        'goog:chromeOptions': {
-            // to run chrome headless the following flags are required
-            // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
-            args: ['--headless', '--disable-gpu'],
-            },
+        // 'goog:chromeOptions': {
+        //     // to run chrome headless the following flags are required
+        //     // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+        //     args: ['--headless', '--disable-gpu'],
+        //     },
         acceptInsecureCerts: true
     },
     // {

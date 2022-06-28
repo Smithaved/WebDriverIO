@@ -5,8 +5,8 @@ const CreateProductPage  = require("../../../pageobjects/VtigerPOM/createProduct
 const fs=require('fs')
 const detail=JSON.parse(fs.readFileSync("test/GenericUtilities/commonData.json"))
 describe("Product",async ()=>{
-    detail.forEach(({username,password}) => {
-        it("CreateProduct",async ()=>{
+    detail.forEach(({username,password,contact}) => {
+        it("CreateProduct----ProductModule",async ()=>{
             // launching the application
             await LoginPage.open()
             //maximizing the browser
