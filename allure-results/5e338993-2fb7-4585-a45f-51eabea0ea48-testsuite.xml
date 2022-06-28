@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656414241007' stop='1656414265606'>
+    <name>Organization</name>
+    <title>Organization</title>
+    <test-cases>
+        <test-case start='1656414241009' status='broken' stop='1656414265599'>
+            <name>CreateOrganization</name>
+            <title>CreateOrganization</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-101.0.1'/>
+                <parameter kind='argument' name='browserVersion' value='101.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9730845f-1e76-494f-bbe2-f21b1487eb48-attachment.png' type='image/png' size='120077'/>
+                <attachment title='Screenshot' source='475f42d8-4bcf-4d71-ada4-851e38c75484-attachment.png' type='image/png' size='120077'/>
+                <attachment title='Screenshot' source='9419ac61-f3aa-4de5-b9e5-b9513fedd923-attachment.png' type='image/png' size='120613'/>
+                <attachment title='Screenshot' source='74f3c78a-f81f-4a8e-b231-8972aadeb16e-attachment.png' type='image/png' size='120613'/>
+                <attachment title='Screenshot' source='9a3042a7-795c-46ef-b42a-a039f8292e6c-attachment.png' type='image/png' size='120613'/>
+                <attachment title='Screenshot' source='048ef85e-d6c1-4b9e-b38a-fc989d9fba44-attachment.png' type='image/png' size='120974'/>
+                <attachment title='Screenshot' source='721018dc-5dc4-440c-9d4a-9ef01520607a-attachment.png' type='image/png' size='92703'/>
+                <attachment title='Screenshot' source='0cd39b42-9c7d-436b-a6fa-f0652a369228-attachment.png' type='image/png' size='92796'/>
+                <attachment title='Screenshot' source='5bc72b26-548d-4680-8414-a1b08029d05f-attachment.png' type='image/png' size='90863'/>
+                <attachment title='Screenshot' source='1f79d5a4-992f-45dd-a814-4d6e9c17fa49-attachment.png' type='image/png' size='90863'/>
+                <attachment title='Screenshot' source='1f5ad696-9b34-4b8b-8b49-e22359eeddb8-attachment.png' type='image/png' size='91362'/>
+                <attachment title='Screenshot' source='9eaae8f6-51cd-4981-81e6-f1c0fc8549d3-attachment.png' type='image/png' size='128168'/>
+                <attachment title='Execution video' source='f5dcd74f-0963-4ee1-8253-0094124b47fb-attachment.mp4' type='video/mp4' size='115'/>
+            </attachments>
+            <failure>
+                <message>Element &lt;img src="themes/softed/images/user.PNG"> is not clickable at point (1266,18) because another element &lt;div id="__vtigerjs_dialogbox_olayer__" class="small veil"> obscures it</message>
+                <stack-trace>element click intercepted: Element &lt;img src="themes/softed/images/user.PNG"> is not clickable at point (1266,18) because another element &lt;div id="__vtigerjs_dialogbox_olayer__" class="small veil"> obscures it
+                    at getErrorFromResponseBody (C:\Users\USER\Desktop\WebDriverIo\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\Users\USER\Desktop\WebDriverIo\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Element.wrapCommandFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\USER\Desktop\WebDriverIo\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -28,9 +28,9 @@ exports.config = {
         // './test/specs/QBank/firstScript.js'
         // './test/specs/vtiger/practice/vtiger.js'
         // './test/specs/Facebook/loginError.js'
-        './test/specs/vtiger/OrganizationModule/createOrganization.js',    
+        // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
-        // './test/specs/vtiger/contactModule/createContact.js',
+        './test/specs/vtiger/contactModule/createContact.js',
         // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
         // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
@@ -108,11 +108,20 @@ exports.config = {
     {
         maxInstances: 3,
         browserName: 'chrome',
+        'goog:chromeOptions': {
+            // to run chrome headless the following flags are required
+            // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+            args: ['--headless', '--disable-gpu'],
+            },
         acceptInsecureCerts: true
     },
     // {
     //     maxInstances: 3,
     //     browserName: 'firefox',
+    // 'moz:firefoxOptions': {
+    //     // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
+    //     args: ['-headless']
+    //   },
     //     acceptInsecureCerts: true
     // }
     ],

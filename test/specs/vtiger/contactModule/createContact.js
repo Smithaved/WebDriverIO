@@ -23,11 +23,11 @@ describe("CreateContact",async()=>{
          await expect(browser).toHaveUrlContaining('Contacts')
          //click on create contact and check create contact page is displayed
          await ContactPage.clickOnCreateContact()
-         var pageTitle=await CreateContactPage.pageHeader
+         var pageTitle=await CreateContactPage.pageHeaderLable
          await expect(pageTitle).toHaveText("Creating New Contact")
          // browser.pause(4000)
          //Fill mandatory fields and click on save and check contact information page is displayed with the newly added lastname
-         var lastname='JS'+Math.round(Math.random()*1000)
+         var lastname=contact+Math.round(Math.random()*1000)
          await CreateContactPage.createContact(lastname)
          var pageTitle=await ContactInformationPage.pageHeadLable;
          await expect(pageTitle).toHaveTextContaining(lastname);
