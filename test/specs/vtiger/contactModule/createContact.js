@@ -6,8 +6,8 @@ const ContactInformationPage = require("../../../pageobjects/VtigerPOM/contactIn
 const fs=require("fs")
 const detail=JSON.parse(fs.readFileSync("test/GenericUtilities/commonData.json"))
 describe("CreateContact",async()=>{
-    detail.forEach(({username,password,contact}) => {
-      it("CreateContact--ContactModule",async()=>{
+    detail.forEach(({username,password}) => {
+      it("CreateContact",async()=>{
         // launching the application
         await LoginPage.open()
         //maximizing the browser
@@ -27,7 +27,7 @@ describe("CreateContact",async()=>{
          await expect(pageTitle).toHaveText("Creating New Contact")
          // browser.pause(4000)
          //Fill mandatory fields and click on save and check contact information page is displayed with the newly added lastname
-         var lastname=contact+Math.round(Math.random()*1000)
+         var lastname="con_"+Math.round(Math.random()*1000)
          await CreateContactPage.createContact(lastname)
          var pageTitle=await ContactInformationPage.pageHeadLable;
          await expect(pageTitle).toHaveTextContaining(lastname);

@@ -1,4 +1,5 @@
 const LoginPage = require('../pageobjects/login.page.js');
+
 describe("CreateContact",()=>{
     it("CreateContact",async()=>{
        // launching the application

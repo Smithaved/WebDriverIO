@@ -1,7 +1,6 @@
 [
     {
         "username":"admin",
-        "password":"admin",
-        "contact":"con_"
+        "password":"admin"
     }
 ]

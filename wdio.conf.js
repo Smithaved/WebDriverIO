@@ -30,13 +30,13 @@ exports.config = {
         // './test/specs/Facebook/loginError.js'
         // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
-        './test/specs/vtiger/contactModule/createContact.js',
         './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+        './test/specs/vtiger/contactModule/createContact.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
         // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
         // './test/specs/vtiger/contactModule/createContactWithBirthDate.js',  
         // './test/specs/vtiger/DocumentModule/createDocument.js',
-        // './test/specs/vtiger/ProductModule/createProduct.js',
+        './test/specs/vtiger/ProductModule/createProduct.js',
         // './test/specs/vtiger/CampaignModule/createCampaign.js',
         // './test/specs/vtiger/CampaignModule/createCampaignWithProduct.js',
         // './test/specs/vtiger/contactModule/createContactWithoutLastName.js',
@@ -51,6 +51,7 @@ exports.config = {
         // './test/specs/Disabled/disable.js'
         // './test/specs/example.e2e.js'
         // './test/specs/createContact.js'
+        // 'test/specs/vtiger/practice/bail.js'
     ],
     // suites:{
     //     smokeSuite:[
@@ -106,7 +107,7 @@ exports.config = {
         // excludeDriverLogs: ['bugreport', 'server'],
    // },
     {
-        maxInstances: 3,
+        maxInstances: 1,
         browserName: 'chrome',
         // 'goog:chromeOptions': {
         //     // to run chrome headless the following flags are required
@@ -150,13 +151,13 @@ exports.config = {
     //
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
-    bail: 0,
+    bail: 1,
     //
     // Set a base URL in order to shorten url command calls. If your `url` parameter starts
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://localhost:8888/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -205,10 +206,7 @@ exports.config = {
         saveAllVideos: false,       // If true, also saves videos for successful test cases
         videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
       }],    
-],
-
-
-    
+],  
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -310,11 +308,11 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: async function(test, context, { error, result, duration, passed, retries }) {
-    //     if (error) {
-    //         await browser.takeScreenshot();
-    //       }
-    // },
+    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            await browser.takeScreenshot();
+          }
+    },
 
 
     /**

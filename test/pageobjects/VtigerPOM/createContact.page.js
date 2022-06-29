@@ -18,6 +18,16 @@ class createContact extends Page
     {
         return $('//input[@name="account_name"]//..//img')
     }
+    
+    get radioButton()
+    {
+        return $('//input[@value="T"]')
+    }
+
+    get groupDropdown()
+    {
+        return $('//select[@name="assigned_group_id"]')
+    }
 
     async createContact(lastname)
     {
@@ -33,6 +43,15 @@ class createContact extends Page
         await browser.switchToWindow(windows[1])
         await SearchPage.search(organizationName)
         await browser.switchToWindow(windows[0])
+        await this.saveButton.waitForClickable()
+        await this.saveButton.click()
+    }
+
+    async createContactWithGroup(lastname,group)
+    {
+        await this.lastNameTextField.setValue(lastname)
+        await this.radioButton.click()
+        await this.groupDropdown.selectByVisibleText(group)
         await this.saveButton.waitForClickable()
         await this.saveButton.click()
     }

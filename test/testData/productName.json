@@ -1,11 +1,17 @@
 [
     {
+        "username":"admin",
+        "password":"admin",
         "productName":"Samsung"
     },
     {
+        "username":"admin",
+        "password":"admin",
         "productName":"iPhone"
     },
     {
+        "username":"admin",
+        "password":"admin",
         "productName":"Vivo"
     }
 ]
