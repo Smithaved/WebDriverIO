@@ -3,19 +3,19 @@ const HomePage = require("../../../pageobjects/VtigerPOM/home.page");
 const ContactPage = require("../../../pageobjects/VtigerPOM/contact.page");
 const CreateContactPage = require("../../../pageobjects/VtigerPOM/createContact.page");
 const ContactInformationPage = require("../../../pageobjects/VtigerPOM/contactInformation.page");
-const fs=require("fs")
-const detail=JSON.parse(fs.readFileSync("test/GenericUtilities/commonData.json"))
+// const fs=require("fs")
+// const detail=JSON.parse(fs.readFileSync("test/GenericUtilities/commonData.json"))
 describe("CreateContact",async()=>{
-    detail.forEach(({username,password}) => {
+    // detail.forEach(({username,password}) => {
       it("CreateContact",async()=>{
         // launching the application
-        await LoginPage.open()
-        //maximizing the browser
-        await browser.maximizeWindow()    
-          //checking the title is matching
-          await expect(browser).toHaveTitleContaining('vtiger CRM 5')
-          //login to application by passing login critireas
-       await LoginPage.login(username,password)
+      //   await LoginPage.open()
+      //   //maximizing the browser
+      //   await browser.maximizeWindow()    
+      //     //checking the title is matching
+      //     await expect(browser).toHaveTitleContaining('vtiger CRM 5')
+      //     //login to application by passing login critireas
+      //  await LoginPage.login(username,password)
          //check whether home page is displayed or not
          await expect(browser).toHaveTitleContaining('Home')
          //navigate to contacts page and check whether  the contacts page is displayed
@@ -34,5 +34,5 @@ describe("CreateContact",async()=>{
          //logout
          await HomePage.logout();
      })
-    });
+    // });
 })

@@ -1,8 +1,10 @@
 const LoginPage=require("../../../pageobjects/VtigerPOM/login.page")
-describe("Execution",async ()=>{
-    it("first",async()=>{
+describe("Execution",async function(){
+    
+    it("first",async function (){
+        this.retries(1)
         await LoginPage.open("http://localhost:8888/index.php")
-        await LoginPage.login("admin1","admin2")
+        await LoginPage.login("admin1","admin")
         await expect(browser).toHaveTitleContaining("Home")
     })
     it("Second",async()=>{

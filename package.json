@@ -12,7 +12,10 @@
        
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "smoke": "npx wdio run ./wdio.conf.js --mochaOpts.grep Product",
+        "report":"allure generate --clean allure-results",
+        "spec":" npx wdio run ./wdio.conf.js --spec test/specs/vtiger/ProductModule/createProduct.js"
     },
     "dependencies": {
         "chai": "^4.3.6",

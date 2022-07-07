@@ -1,22 +1,5 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
-  "children" : [ {
-    "name" : "CreateOrganization",
-    "uid" : "766cdc42cd17856d",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1656412185484,
-      "stop" : 1656412209923,
-      "duration" : 24439
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-103.0.5060.53", "103.0.5060.53" ]
-  } ]
+  "children" : [ ]
 }

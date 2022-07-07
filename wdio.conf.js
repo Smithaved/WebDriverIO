@@ -1,4 +1,9 @@
+const loginpage=require("./test/pageobjects/VtigerPOM/login.page")
+const HomePage=require("./test/pageobjects/VtigerPOM/home.page")
 const video = require('wdio-video-reporter');
+const fs=require('fs')
+let detail=JSON.parse(fs.readFileSync("test/GenericUtilities/commonData.json"))
+// const commanData=require("./test/GenericUtilities/commonData.json")
 
 exports.config = {
     //
@@ -30,7 +35,7 @@ exports.config = {
         // './test/specs/Facebook/loginError.js'
         // './test/specs/vtiger/OrganizationModule/createOrganization.js',    
         // './test/specs/vtiger/OrganizationModule/createOrganizationWithIndustryAndType.js',
-        './test/specs/vtiger/contactModule/createContactWithOrganization.js',
+        // './test/specs/vtiger/contactModule/createContactWithOrganization.js',
         './test/specs/vtiger/contactModule/createContact.js',
         // './test/specs/vtiger/contactModule/createContactByAssigningToSouportGroup.js',
         // './test/specs/vtiger/contactModule/createContactWithContactImage.js',
@@ -119,10 +124,10 @@ exports.config = {
     // {
     //     maxInstances: 3,
     //     browserName: 'firefox',
-    // 'moz:firefoxOptions': {
-    //     // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
-    //     args: ['-headless']
-    //   },
+    // // 'moz:firefoxOptions': {
+    // //     // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
+    // //     args: ['-headless']
+    // //   },
     //     acceptInsecureCerts: true
     // }
     ],
@@ -195,18 +200,18 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    // reporters: ['spec'],
-    reporters: [
-        ['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-    }],
-    [video, {
-        saveAllVideos: false,       // If true, also saves videos for successful test cases
-        videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
-      }],    
-],  
+    reporters: ['spec'],
+//     reporters: [
+//         ['allure', {
+//         outputDir: 'allure-results',
+//         disableWebdriverStepsReporting: true,
+//         disableWebdriverScreenshotsReporting: false,
+//     }],
+//     [video, {
+//         saveAllVideos: false,       // If true, also saves videos for successful test cases
+//         videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
+//       }],    
+// ],  
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -279,18 +284,27 @@ exports.config = {
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
-    // beforeSuite: function (suite) {
+    // beforeSuite:  function (suite) {
+    //     detail.forEach(({username,password}) => {
+    //     username1=username
+    //     password1=password
+    // })
     // },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
+    // beforeTest: async function (test, context) {
+    //     await loginpage.open()
+    //     await browser.maximizeWindow()
+    //     await expect(browser).toHaveTitleContaining('vtiger CRM 5')
+    //     await loginpage.login(detail.at().username,detail.at().password)
     // },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
      */
-    // beforeHook: function (test, context) {
+    // beforeHook: async function (test, context) {
+        
     // },
     /**
      * Hook that gets executed _after_ a hook within the suite starts (e.g. runs after calling
@@ -309,6 +323,7 @@ exports.config = {
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
     afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+        // await HomePage.logout()
         if (error) {
             await browser.takeScreenshot();
           }
